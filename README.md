@@ -29,7 +29,7 @@ pip install -r requirements.txt
   <summary> Dependencies (click to expand) </summary>
   
   ## Dependencies
-  - PyTorch 1.4
+  - PyTorch 1.12
   - matplotlib
   - numpy
   - imageio
