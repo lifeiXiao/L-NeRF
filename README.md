@@ -5,6 +5,11 @@
 ![](https://user-images.githubusercontent.com/7057863/78472232-cf374a00-7769-11ea-8871-0bc710951839.gif)
 ![](https://user-images.githubusercontent.com/7057863/78472235-d1010d80-7769-11ea-9be9-51365180e063.gif)
 -->
+This project proposes a novel strategy
+utilizing local importance sampling, denoted as L-NeRF. Contrary to traditional NeRF sampling that spans
+the entire ray, L-NeRF excludes low-weight, uniformly sampled points sampled in ray extremities or noisy
+areas and importance sampling is concentrated in areas with significant weights, disregarding low-weight
+point distribution.
 
 This project improves the clarity of surface
 details and significantly surpasses traditional NeRF(Nerf-pytorch) in view synthesis quality. Moreover, L-NeRF
