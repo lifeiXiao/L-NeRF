@@ -126,7 +126,8 @@ py.test
   
 <img src='imgs/pipeline.png'/>
 
-> A neural radiance field is a simple fully connected network (weights are ~5MB) trained to reproduce input views of a single scene using a rendering loss. The network directly maps from spatial location and viewing direction (5D input) to color and opacity (4D output), acting as the "volume" so we can use volume rendering to differentiably render new views
+>L-NeRF, which improves the model details by performing weighted sampling in the region with a high weight of uniformly sampled points, instead of importance sampling along the entire ray.
+>This approach allows us to increase the model's level of detail while reducing the sampling count by approximately 30\% and decreasing the training time by about 25\% compared to the original NeRF model.
 
 
 ## Citation
