@@ -133,6 +133,17 @@ py.test
 ## Citation
 Kudos to the authors for their amazing results:
 ```
+@misc{mildenhall2020nerf,
+    title={NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis},
+    author={Ben Mildenhall and Pratul P. Srinivasan and Matthew Tancik and Jonathan T. Barron and Ravi Ramamoorthi and Ren Ng},
+    year={2020},
+    eprint={2003.08934},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV}
+}
+```
+Our code is mostly based on the following code:
+```
 @misc{lin2020nerfpytorch,
   title={NeRF-pytorch},
   author={Yen-Chen, Lin},
@@ -143,7 +154,7 @@ Kudos to the authors for their amazing results:
 }
 ```
 
-However, if you find this implementation or pre-trained models helpful, please consider to cite:
+However, if you find this implementation or method helpful, please consider to cite:
 ```
 @misc{xiao2024L-NeRF,
   title={L=NeRF},
