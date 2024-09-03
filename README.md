@@ -124,16 +124,8 @@ python run_nerf.py --config configs/{DATASET}.txt --threshold {float number} --r
 
 replace `{DATASET}` with `trex` | `horns` | `flower` | `fortress` | `lego` | etc.
 
-### Reproducibility 
-
-Tests that ensure the results of all functions and training loop match the official implentation are contained in a different branch `reproduce`. One can check it out and run the tests:
-```
-git checkout reproduce
-py.test
-```
 
 ## Method
-
 
   
 <img src='imgs/pipeline.png'/>
