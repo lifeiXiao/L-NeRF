@@ -17,3 +17,5 @@ precrop_iters = 250
 precrop_frac = 0.5
 
 half_res = True
+
+threshold = 0.0
