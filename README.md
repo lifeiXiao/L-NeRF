@@ -99,8 +99,20 @@ To train NeRF on different datasets:
 ```
 python run_nerf.py --config configs/{DATASET}.txt
 ```
-
 replace `{DATASET}` with `trex` | `horns` | `flower` | `fortress` | `lego` | etc.
+
+All the thresholds of the datasets are default set 0.0, if you want to set by yourself ,
+
+you can add arguments and than train, an example is:
+
+```
+python run_nerf.py --config configs/{DATASET}.txt --threshold 0.0
+```
+
+or you can change the configs files, and change the thresholds, for example,
+you can add ``` threshold = 0.001 ``` in the bottom of the configs files.
+
+
 
 ---
 
