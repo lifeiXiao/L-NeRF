@@ -17,6 +17,19 @@ accentuates the demarcation between the rendered model and the scene, enhancing 
 facilitating the segmentation of key objects for further research. Compared to the original NeRF model,
 this method enhances rendering quality by approximately 10% while reducing training time by nearly 25%. 
 
+
+
+
+## Method
+
+  
+<img src='imgs/pipeline.png'/>
+
+>L-NeRF, which improves the model details by performing weighted sampling in the region with a high weight of uniformly sampled points, instead of importance sampling along the entire ray.
+>This approach allows us to increase the model's level of detail while reducing the sampling count by approximately 30\% and decreasing the training time by about 25\% compared to the original NeRF model.
+
+
+
 ## Installation
 
 ```
@@ -125,13 +138,6 @@ python run_nerf.py --config configs/{DATASET}.txt --threshold {float number} --r
 replace `{DATASET}` with `trex` | `horns` | `flower` | `fortress` | `lego` | etc.
 
 
-## Method
-
-  
-<img src='imgs/pipeline.png'/>
-
->L-NeRF, which improves the model details by performing weighted sampling in the region with a high weight of uniformly sampled points, instead of importance sampling along the entire ray.
->This approach allows us to increase the model's level of detail while reducing the sampling count by approximately 30\% and decreasing the training time by about 25\% compared to the original NeRF model.
 
 
 ## Citation
