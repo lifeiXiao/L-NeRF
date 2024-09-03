@@ -192,8 +192,8 @@ def ndc_rays(H, W, focal, near, rays_o, rays_d):
     return rays_o, rays_d
 
 
-# Hierarchical sampling (section 5.2)
-def sample_pdf(bins, weights, N_samples, det=False, pytest=False, threshold=0.015):
+# Hierarchical sampling # add threshold, the main part of L-NeRF
+def sample_pdf(bins, weights, N_samples, det=False, pytest=False, threshold=0.0):
     # Filter weights based on threshold
     mask = weights >= threshold
     filtered_weights = weights * mask
