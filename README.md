@@ -53,7 +53,7 @@ bash download_example_data.sh
 
 To train a low-res `lego` NeRF:
 ```
-python run_nerf.py --config configs/lego.txt threshold = 0.0
+python run_nerf.py --config configs/lego.txt --threshold 0.0
 ```
 <!--
 After training for 100k iterations (~4 hours on a single 2080 Ti), you can find the following video at `logs/lego_test/lego_test_spiral_100000_rgb.mp4`.
@@ -65,7 +65,7 @@ After training for 100k iterations (~4 hours on a single 2080 Ti), you can find 
 
 To train a low-res `fern` NeRF:
 ```
-python run_nerf.py --config configs/fern.txt threshold = 0.0
+python run_nerf.py --config configs/fern.txt --threshold 0.0
 ```
 <!--
 After training for 200k iterations (~8 hours on a single 2080 Ti), you can find the following video at `logs/fern_test/fern_test_spiral_200000_rgb.mp4` and `logs/fern_test/fern_test_spiral_200000_disp.mp4`
