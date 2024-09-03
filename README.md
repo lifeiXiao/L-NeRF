@@ -97,7 +97,7 @@ To play with other scenes presented in the paper, download the data [here](https
 To train NeRF on different datasets: 
 
 ```
-python run_nerf.py --config configs/{DATASET}.txt
+python run_nerf.py --config configs/{DATASET}.txt --threshold {float number}
 ```
 replace `{DATASET}` with `trex` | `horns` | `flower` | `fortress` | `lego` | etc.
 
@@ -119,7 +119,7 @@ you can add ``` threshold = 0.001 ``` in the bottom of the configs files.
 To test NeRF trained on different datasets: 
 
 ```
-python run_nerf.py --config configs/{DATASET}.txt --render_only
+python run_nerf.py --config configs/{DATASET}.txt --threshold {float number} --render_only
 ```
 
 replace `{DATASET}` with `trex` | `horns` | `flower` | `fortress` | `lego` | etc.
